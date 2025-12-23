@@ -121,15 +121,33 @@ git push
 - `git add .` : 모든 변경 파일을 스테이징합니다.
 - `git commit -m "메시지"` : 커밋 메시지와 함께 변경 사항을 커밋합니다.
 - `git push` : 원격 저장소에 커밋을 업로드합니다.
-	gh repo create ... --gitignore=Python
-	```
-	또는 직접 `.gitignore` 파일을 만들고 아래와 같이 작성합니다.
-	```
-	__pycache__/
-	*.pyc
-	*.pyo
-	*.pyd
-	.venv/
-	.env/
-	# 기타 Python 관련 무시 패턴...
-	```
+
+## 6. Python 라이브러리 설치 및 가상환경(.venv) 사용 방법
+
+1. 터미널에서 아래 명령어로 가상환경을 생성합니다.
+
+```
+python -m venv .venv
+```
+
+2. 가상환경을 활성화합니다.
+- Windows:
+```
+.venv\Scripts\activate
+```
+- macOS/Linux:
+```
+source .venv/bin/activate
+```
+
+3. 필요한 라이브러리(예: requests)를 설치합니다.
+```
+pip install requests
+```
+
+4. hello.py를 실행하여 동작을 확인합니다.
+```
+python hello.py
+```
+
+---
