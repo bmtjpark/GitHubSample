@@ -88,7 +88,6 @@ git commit --amend --reset-author
 
 ---
 
-- [GitHubSample 저장소 바로가기](https://github.com/bmtjpark/GitHubSample)
 
 ## 4. .gitignore 설정 방법
 
